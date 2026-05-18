@@ -25,6 +25,28 @@ pois = [
         ]
     },
     {
+        "name": "Mount Doom - Mount Ngauruhoe",
+        "lat": -39.1568333333,
+        "lon": 175.6321666667,
+        "category": "lotr",
+        "description": "Góra, gdzie wrzucają pierścień",
+        "images": [
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/mount_doom_1.jpg",
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/mount_doom_2.jpg"
+        ]
+    },
+    {
+        "name": "Rivendell - Kaitoke Regional Park",
+        "lat": -41.069027,
+        "lon": 175.198658,
+        "category": "lotr",
+        "description": "Dom elfów",
+        "images": [
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/rivendell_1.jpg",
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/rivendell_2.jpg"
+        ]
+    },
+    {
         "name": "Narnia Forest",
         "lat": -43.532,
         "lon": 172.636,
