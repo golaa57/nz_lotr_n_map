@@ -14,6 +14,17 @@ pois = [
         ]
     },
     {
+        "name": "Mordor - Tongariro National Park",
+        "lat": -39.213635,
+        "lon": 175.5875019444,
+        "category": "lotr",
+        "description": "Sceny z Mordoru",
+        "images": [
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/mordor_nz.jpg",
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/mordor_2.jpg"
+        ]
+    },
+    {
         "name": "Narnia Forest",
         "lat": -43.532,
         "lon": 172.636,
@@ -63,7 +74,9 @@ for poi in pois:
 
         {popup_images}
 
-        <p>{poi['description']}</p>
+        <div style="font-size:13px; color:#444;">
+            {poi['description']}
+        </div>
 
     </div>
     """
