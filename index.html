@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_42c77382e3d05026fb40d8275470f3c8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_42c77382e3d05026fb40d8275470f3c8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_42c77382e3d05026fb40d8275470f3c8 = L.map(
+                "map_42c77382e3d05026fb40d8275470f3c8",
+                {
+                    center: [-41.0, 174.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_69fcf917be69705c302feec6d6b72f02 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_69fcf917be69705c302feec6d6b72f02.addTo(map_42c77382e3d05026fb40d8275470f3c8);
+        
+    
+            var marker_44ea487a35a9e58ed45fe60a188eeac6 = L.marker(
+                [-37.8575, 175.679722],
+                {
+}
+            ).addTo(map_42c77382e3d05026fb40d8275470f3c8);
+        
+    
+            var icon_9a3ed26e24f1aac7aaa0c0fcf93e6ed4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_400a84f457a4d43084f3531fa2bd2d6f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0513a3b9ffa95305c03a08da2906c58 = $(`<div id="html_c0513a3b9ffa95305c03a08da2906c58" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">          <h3>Hobbiton - Matamata</h3>                   <img             src="https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/hobbiton_nz.jpg"             width="250"             style="                 margin-bottom:10px;                 border-radius:10px;             "         >                   <div style="font-size:13px; color:#444;">             Po prostu Shire         </div>      </div>     </div>`)[0];
+                popup_400a84f457a4d43084f3531fa2bd2d6f.setContent(html_c0513a3b9ffa95305c03a08da2906c58);
+            
+        
+
+        marker_44ea487a35a9e58ed45fe60a188eeac6.bindPopup(popup_400a84f457a4d43084f3531fa2bd2d6f)
+        ;
+
+        
+    
+    
+            marker_44ea487a35a9e58ed45fe60a188eeac6.bindTooltip(
+                `<div>
+                     Hobbiton - Matamata
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_44ea487a35a9e58ed45fe60a188eeac6.setIcon(icon_9a3ed26e24f1aac7aaa0c0fcf93e6ed4);
+            
+    
+            var marker_cde9136c8ab61cdaa15755d41bf1a879 = L.marker(
+                [-39.213635, 175.5875019444],
+                {
+}
+            ).addTo(map_42c77382e3d05026fb40d8275470f3c8);
+        
+    
+            var icon_58660ec952c72bc0191c8a2d388598bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59bd454211800e10ef737fb9ba977c05 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8cf7f201bee420b0e61cb05d5bea231 = $(`<div id="html_d8cf7f201bee420b0e61cb05d5bea231" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">          <h3>Mordor - Tongariro National Park</h3>                   <img             src="https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/mordor_nz.jpg"             width="250"             style="                 margin-bottom:10px;                 border-radius:10px;             "         >                  <img             src="https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/mordor_2.jpg"             width="250"             style="                 margin-bottom:10px;                 border-radius:10px;             "         >                   <div style="font-size:13px; color:#444;">             Sceny z Mordoru         </div>      </div>     </div>`)[0];
+                popup_59bd454211800e10ef737fb9ba977c05.setContent(html_d8cf7f201bee420b0e61cb05d5bea231);
+            
+        
+
+        marker_cde9136c8ab61cdaa15755d41bf1a879.bindPopup(popup_59bd454211800e10ef737fb9ba977c05)
+        ;
+
+        
+    
+    
+            marker_cde9136c8ab61cdaa15755d41bf1a879.bindTooltip(
+                `<div>
+                     Mordor - Tongariro National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cde9136c8ab61cdaa15755d41bf1a879.setIcon(icon_58660ec952c72bc0191c8a2d388598bc);
+            
+    
+            var marker_0476b781df7a2e8a0dbca2469844cb9b = L.marker(
+                [-43.532, 172.636],
+                {
+}
+            ).addTo(map_42c77382e3d05026fb40d8275470f3c8);
+        
+    
+            var icon_b482c8823a5542f9f95ea2944fcc804a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crown",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4bf613563bf3d28cbfa6dffa484a063 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_851bd1f5fb1a1b5d6f5063f8510e600c = $(`<div id="html_851bd1f5fb1a1b5d6f5063f8510e600c" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">          <h3>Narnia Forest</h3>                   <img             src="https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/nz-03.jpg"             width="250"             style="                 margin-bottom:10px;                 border-radius:10px;             "         >                  <img             src="https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/nz-03.jpg"             width="250"             style="                 margin-bottom:10px;                 border-radius:10px;             "         >                   <div style="font-size:13px; color:#444;">             Mystical forest landscapes connected to fantasy productions.         </div>      </div>     </div>`)[0];
+                popup_f4bf613563bf3d28cbfa6dffa484a063.setContent(html_851bd1f5fb1a1b5d6f5063f8510e600c);
+            
+        
+
+        marker_0476b781df7a2e8a0dbca2469844cb9b.bindPopup(popup_f4bf613563bf3d28cbfa6dffa484a063)
+        ;
+
+        
+    
+    
+            marker_0476b781df7a2e8a0dbca2469844cb9b.bindTooltip(
+                `<div>
+                     Narnia Forest
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0476b781df7a2e8a0dbca2469844cb9b.setIcon(icon_b482c8823a5542f9f95ea2944fcc804a);
+            
+</script>
+</html>

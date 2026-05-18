@@ -98,4 +98,4 @@ for poi in pois:
 
     ).add_to(m)
 
-m.save("nz_map.html")
+m.save("index.html")
