@@ -4,16 +4,39 @@ m = folium.Map(location=[-41, 174], zoom_start=5)
 
 pois = [
     {
-        "name": "Hobbiton",
-        "lat": -37.872,
-        "lon": 175.682,
-        "description": "The Shire filming location.",
+        "name": "Hobbiton - Matamata",
+        "lat": -37.8575,
+        "lon": 175.679722,
+        "category": "lotr",
+        "description": "Po prostu Shire",
         "images": [
-            "https://upload.wikimedia.org/wikipedia/commons/6/6f/Hobbiton_Movie_Set.jpg",
-            "https://upload.wikimedia.org/wikipedia/commons/6/67/Hobbiton_houses.jpg"
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/hobbiton_nz.jpg"
+        ]
+    },
+    {
+        "name": "Narnia Forest",
+        "lat": -43.532,
+        "lon": 172.636,
+        "category": "narnia",
+        "description": "Mystical forest landscapes connected to fantasy productions.",
+        "images": [
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/nz-03.jpg",
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/nz-03.jpg"
         ]
     }
 ]
+
+styles = {
+    "lotr": {
+        "color": "green",
+        "icon": "tree"
+    },
+
+    "narnia": {
+        "color": "red",
+        "icon": "crown"
+    }
+}
 
 for poi in pois:
 
@@ -31,8 +54,10 @@ for poi in pois:
         >
         """
 
+    style = styles[poi["category"]]
+
     popup_html = f"""
-    <div style="width:260px">
+    <div style="width:250px">
 
         <h3>{poi['name']}</h3>
 
@@ -45,7 +70,19 @@ for poi in pois:
 
     folium.Marker(
         location=[poi["lat"], poi["lon"]],
-        popup=folium.Popup(popup_html, max_width=300)
+        tooltip=poi["name"],
+
+        popup=folium.Popup(
+            popup_html,
+            max_width=300
+        ),
+
+        icon=folium.Icon(
+            color=style["color"],
+            icon=style["icon"],
+            prefix="fa"
+        )
+
     ).add_to(m)
 
 m.save("nz_map.html")
