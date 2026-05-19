@@ -193,16 +193,78 @@ pois = [
         ]
     },
     {
-        "name": "Narnia Forest",
-        "lat": -43.532,
-        "lon": 172.636,
+        "name": "Wejście do Narnii w Kaspianie - Cathedral Cove",
+        "lat": -36.8283,
+        "lon": 175.7900,
         "category": "narnia",
-        "description": "Mystical forest landscapes connected to fantasy productions.",
+        "description": "W tym miejscu pojawiają się pierwszy raz w Narnii w drugiej części.",
         "images": [
-            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/nz-03.jpg",
-            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/nz-03.jpg"
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/cove_1.jpg",
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/cove_2.jpg"
         ]
-    }
+    },
+    {
+        "name": "Plaża z Kaspiana - Coromandel Peninsula",
+        "lat": -37.0163888889,
+        "lon": 175.6786111111,
+        "category": "narnia",
+        "description": "Plaża, gdzie się bawią po przybyciu w drugiej części. Ruiny cair paravel. Cathedral Cove jest elementem tego półwyspu",
+        "images": [
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/coro_1.jpg"
+        ]
+    },
+    {
+        "name": "Bitwa - Flock Hill",
+        "lat": -43.1301611111,
+        "lon": 171.772325,
+        "category": "narnia",
+        "description": "Miejsce głównej bitwy z pierwszej części",
+        "images": [
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/bitwa_1.jpg",
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/bitwa_2.jpg"
+        ]
+    },
+    {
+        "name": "Obóz Aslana - Elephant Rocks",
+        "lat": -44.8935,
+        "lon": 170.6562,
+        "category": "narnia",
+        "description": "Obóz Aslana z pierwszej części",
+        "images": [
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/aslan_1.jpg",
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/aslan_2.jpg"
+        ]
+    },
+    {
+        "name": "Niby bitwa - Anatini Fossil Site",
+        "lat": -44.89336,
+        "lon": 170.65621,
+        "category": "narnia",
+        "description": "Niby kontynuacja bitwa z pierwszej części, ale jest to niemal ta sama lokalizacja, co obóz Aslana",
+        "images": [
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/bit_1.jpg"
+        ]
+    },
+    {
+        "name": "Zatoka Purakaunui",
+        "lat": -45.75,
+        "lon": 170.6333333333,
+        "category": "narnia",
+        "description": "Chyba plaża, po której idzie Aslan w pierwszej części",
+        "images": [
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/pura_1.jpg"
+        ]
+    },
+    {
+        "name": "Christchurch",
+        "lat": -43.53,
+        "lon": 172.6202777778,
+        "category": "narnia",
+        "description": "Różne sceny z Narnii",
+        "images": [
+            "https://raw.githubusercontent.com/golaa57/nz_lotr_n_map/main/images/christ_1.jpg"
+        ]
+    },
 ]
 
 styles = {
@@ -216,7 +278,7 @@ styles = {
     },
     "both": {
         "color": "blue",
-        "icon": "castle"
+        "icon": "shield"
     }
 }
 
